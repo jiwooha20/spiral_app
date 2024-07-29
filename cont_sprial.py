@@ -106,7 +106,7 @@ class MidiVisualizerApp:
                 B = self.spectrogram2[1:, self.current_step]
                 self.scatter.set_offsets(np.c_[self.theta_list, self.r_list])
                 self.scatter.set_array(A)
-                self.scatter.set_sizes(B)
+                self.scatter.set_sizes(B)  
                 self.canvas.draw_idle()
                 self.update_plot_id = self.root.after(1, self.update_plot)
             else:
